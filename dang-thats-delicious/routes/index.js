@@ -55,7 +55,7 @@ router.post('/reviews/:id',
 	authController.isLoggedIn, 
 	catchErrors(reviewController.addReview)
 );
-
+router.get('/top', catchErrors(storeController.getTopStores));
 /*
 	API
 */
